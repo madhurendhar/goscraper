@@ -52,7 +52,7 @@ func main() {
 	app.Use(etag.New())
 
 	urls := os.Getenv("URL")
-	allowedOrigins := "http://localhost:243"
+	allowedOrigins := "https://madhuthemass.onrender.com"
 	if urls != "" {
 		allowedOrigins += "," + urls
 	}
