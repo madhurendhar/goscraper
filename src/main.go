@@ -368,7 +368,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "10000"
 	}
 	log.Printf("Starting server on port %s...", port)
 	if err := app.Listen("0.0.0.0:" + port); err != nil {
